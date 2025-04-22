@@ -3,12 +3,13 @@ using System.Linq;
 using DataStore;
 using DataStore.Models;
 
-var customers = MyData.GetCustomers();
+// WHERE Function
+var customer = MyData.GetCustomers();
 
-var highValueCustomers = customers
-    .Where(c => c.orders.Any(o => o.products.Sum(p => p.price) > 1000));
-
-foreach (var customer in highValueCustomers)
+var highValueCustomers = customer.Where(o => o.orders.Any(p => p.products.Sum(s => s.price) > 500 && p.products.Sum(s => s.price) < 2000));
+foreach (var item in highValueCustomers)
 {
-    Console.WriteLine(customer.name);
+    Console.WriteLine(item.name);
 }
+
+
