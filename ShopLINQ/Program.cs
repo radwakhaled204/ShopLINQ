@@ -22,4 +22,10 @@ var customer = MyData.GetCustomers();
 //    Console.WriteLine(item);
 //}
 
+//SelectMany Function
+var all = customer.SelectMany(o=>o.orders).SelectMany(p =>p.products);
+foreach (var item in all)
+{
+    Console.WriteLine($"{item.name} - {item.price}");
+}
 
