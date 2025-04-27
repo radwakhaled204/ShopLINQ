@@ -58,7 +58,19 @@ var customer = MyData.GetCustomers();
 
 
 //Grouping: GroupBy
-var order = customer.SelectMany(o => o.orders).SelectMany(p => p.products).GroupBy(s => s.price).ToList();
+//var order = customer.SelectMany(o => o.orders).SelectMany(p => p.products).GroupBy(s => s.price).ToList();
+//foreach (var group in order)
+//{
+//    //Key : for group
+//    Console.WriteLine($"Price: {group.Key}");
+//    foreach (var item in group)
+//    {
+//        Console.WriteLine($"Product Name: {item.name}");
+//    }
+//}
+
+//ToLookup
+var order = customer.SelectMany(o => o.orders).SelectMany(p => p.products).ToLookup(s => s.price).ToList();
 foreach (var group in order)
 {
     //Key : for group
