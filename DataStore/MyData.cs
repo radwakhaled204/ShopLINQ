@@ -65,6 +65,25 @@ public static class MyData
                     }
                 }
             },
+                      new Customer
+            {
+                id = 3,
+                name = "Azza",
+                orders = new List<Order>
+                {
+                    new Order
+                    {
+                        id = 103,
+                        date = DateTime.Now.AddDays(-7),
+                        products = new List<Product>
+                        {
+                            new Product { id = 1, name = "Bed", price = 2500 },
+                            new Product { id = 1, name = "Lamp", price = 500 }
+
+                        }
+                    }
+                }
+            },
             new Customer
             {
                 id = 4,
