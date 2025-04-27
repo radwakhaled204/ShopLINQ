@@ -43,7 +43,7 @@ var customer = MyData.GetCustomers();
 //}
 
 //OrderByDescending
-//var order = customer.SelectMany(o => o.orders).SelectMany(p => p.products).OrderByDescending(n => n.price).ToList();
+//var order = customer.SelectMany(o => o.orders).SelectMany(p => p.products).OrderByDescending(s => s.price).ToList();
 //foreach (var item in order)
 //{
 //    Console.WriteLine(item.price);
