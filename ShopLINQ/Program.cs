@@ -35,3 +35,11 @@ var customer = MyData.GetCustomers();
 //    Console.WriteLine($"{Or.name} -{Or.id}- {Or.price }");
 //}
 
+//Sorting: OrderBy
+var order = customer.SelectMany(o => o.orders).OrderBy(d => d.date).ToList();
+foreach (var item in order)
+{
+    Console.WriteLine(item.date);
+}
+
+
