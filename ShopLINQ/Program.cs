@@ -88,3 +88,5 @@ var customer = MyData.GetCustomers();
 //Element Operators
 
 //Quntifier
+
+//Set Operations
