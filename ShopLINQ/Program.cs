@@ -94,3 +94,5 @@ var customer = MyData.GetCustomers();
 //Conversion
 
 //Partitioning 
+
+//Miscellaneous
