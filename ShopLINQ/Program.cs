@@ -84,3 +84,5 @@ var customer = MyData.GetCustomers();
 //Aggregation
 
 //Joining 
+
+//Element Operators
