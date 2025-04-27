@@ -56,6 +56,8 @@ var customer = MyData.GetCustomers();
 //    Console.WriteLine(item.name);
 //}
 
+
+//Grouping: GroupBy
 var order = customer.SelectMany(o => o.orders).SelectMany(p => p.products).GroupBy(s => s.price).ToList();
 foreach (var group in order)
 {
