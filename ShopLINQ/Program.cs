@@ -49,4 +49,9 @@ var customer = MyData.GetCustomers();
 //    Console.WriteLine(item.price);
 //}
 
-
+//ThenBy
+var order = customer.OrderBy(c => c.name).ThenBy(c => c.orders.Count).ToList();
+foreach (var item in order)
+{
+    Console.WriteLine(item.name);
+}
