@@ -36,10 +36,17 @@ var customer = MyData.GetCustomers();
 //}
 
 //Sorting: OrderBy
-var order = customer.SelectMany(o => o.orders).OrderBy(d => d.date).ToList();
-foreach (var item in order)
-{
-    Console.WriteLine(item.date);
-}
+//var order = customer.SelectMany(o => o.orders).OrderBy(d => d.date).ToList();
+//foreach (var item in order)
+//{
+//    Console.WriteLine(item.date);
+//}
+
+//OrderByDescending
+//var order = customer.SelectMany(o => o.orders).SelectMany(p => p.products).OrderByDescending(n => n.price).ToList();
+//foreach (var item in order)
+//{
+//    Console.WriteLine(item.price);
+//}
 
 
