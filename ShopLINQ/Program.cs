@@ -7,7 +7,7 @@ using DataStore.Models;
 var customer = MyData.GetCustomers();
 
 
-// WHERE Function
+//Filtring: WHERE Function
 //var highValueCustomers = customer.Where(o => o.orders.Any(p => p.products.Sum(s => s.price) > 500 && p.products.Sum(s => s.price) < 2000));
 //foreach (var item in highValueCustomers)
 //{
@@ -15,7 +15,7 @@ var customer = MyData.GetCustomers();
 //}
 
 
-//Select Funcation
+// Projection: Select Funcation
 //var upcustomer = customer.Select(n => n.name.ToUpper());
 //foreach (var item in upcustomer)
 //{
@@ -24,9 +24,14 @@ var customer = MyData.GetCustomers();
 
 
 //SelectMany Function
-//var all = customer.SelectMany(o=>o.orders).SelectMany(p =>p.products);
+//var all = customer.SelectMany(o => o.orders).SelectMany(p => p.products);
 //foreach (var item in all)
 //{
 //    Console.WriteLine($"{item.name} - {item.price}");
+//}
+//var allpro = customer.SelectMany(o => o.orders).SelectMany(p => p.products);
+//foreach(var Or in allpro)
+//{
+//    Console.WriteLine($"{Or.name} -{Or.id}- {Or.price }");
 //}
 
