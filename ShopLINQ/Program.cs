@@ -80,3 +80,5 @@ var customer = MyData.GetCustomers();
 //        Console.WriteLine($"Product Name: {item.name}");
 //    }
 //}
+
+//Aggregation
