@@ -92,3 +92,5 @@ var customer = MyData.GetCustomers();
 //Set Operations
 
 //Conversion
+
+//Partitioning 
