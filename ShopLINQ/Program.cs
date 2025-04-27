@@ -70,13 +70,13 @@ var customer = MyData.GetCustomers();
 //}
 
 //ToLookup
-var order = customer.SelectMany(o => o.orders).SelectMany(p => p.products).ToLookup(s => s.price).ToList();
-foreach (var group in order)
-{
-    //Key : for group
-    Console.WriteLine($"Price: {group.Key}");
-    foreach (var item in group)
-    {
-        Console.WriteLine($"Product Name: {item.name}");
-    }
-}
+//var order = customer.SelectMany(o => o.orders).SelectMany(p => p.products).ToLookup(s => s.price).ToList();
+//foreach (var group in order)
+//{
+//    //Key : for group
+//    Console.WriteLine($"Price: {group.Key}");
+//    foreach (var item in group)
+//    {
+//        Console.WriteLine($"Product Name: {item.name}");
+//    }
+//}
