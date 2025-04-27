@@ -90,3 +90,5 @@ var customer = MyData.GetCustomers();
 //Quntifier
 
 //Set Operations
+
+//Conversion
