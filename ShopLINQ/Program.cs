@@ -83,9 +83,19 @@ var customer = MyData.GetCustomers();
 
 //Aggregation
 //sum
-var sumofprice = customer.SelectMany(o => o.orders).SelectMany(p=> p.products).Sum(s => s.price);
+//var sumofprice = customer.SelectMany(o => o.orders).SelectMany(p=> p.products).Sum(s => s.price);
 
-    Console.WriteLine(sumofprice);
+//    Console.WriteLine(sumofprice);
+//count 
+var countoforder = customer.SelectMany(o => o.orders).Count();
+
+Console.WriteLine(countoforder);
+
+
+
+
+
+
 
 //Joining 
 
