@@ -137,17 +137,17 @@ var customer = MyData.GetCustomers();
 //    Console.WriteLine("Customer Not Found");
 
 //single
-//var first = customer.First();
-//Console.WriteLine(first.name);
+//var single = customer.Single(n => n.name == "Radwa");
+//Console.WriteLine(single.name);
 
 //singleorefault
-var singleorefault = customer.SingleOrDefault(n => n.name == "Radwa");
-if (singleorefault != null)
-{
-    Console.WriteLine(singleorefault.name);
-}
-else
-    Console.WriteLine("Customer Not Found");
+//var singleorefault = customer.SingleOrDefault(n => n.name == "Radwa");
+//if (singleorefault != null)
+//{
+//    Console.WriteLine(singleorefault.name);
+//}
+//else
+//    Console.WriteLine("Customer Not Found");
 
 //Quntifier
 
