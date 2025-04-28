@@ -155,7 +155,9 @@ var customer = MyData.GetCustomers();
 //var findcust = MyData.GetCustomers().ElementAt(4);
 //Console.WriteLine(findcust.name);
 
-
+//ElementAtOrDefault
+//var findcust = customer.ElementAtOrDefault(2);
+//Console.WriteLine(findcust.name);
 
 //Quntifier
 
