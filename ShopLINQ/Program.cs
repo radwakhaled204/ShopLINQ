@@ -112,19 +112,31 @@ var customer = MyData.GetCustomers();
 //var last = customer.Last();
 //Console.WriteLine(last.name);
 
+//lastordefault
+//var lastordefault = customer.LastOrDefault();
+
+//if (lastordefault != null)
+//{
+//    Console.WriteLine(lastordefault.name);
+//}
+//else
+//    Console.WriteLine("Customer Not Found");
+
 //first
 //var first = customer.First();
 //Console.WriteLine(first.name);
 
 
 //firstordefault
-var firstordefault = customer.FirstOrDefault(n => n.name == "Radwa");
-if (firstordefault != null)
-{
-    Console.WriteLine(firstordefault.name);
-}
-else
-    Console.WriteLine("Customer Not Found");
+//var firstordefault = customer.FirstOrDefault(n => n.name == "Radwa");
+//if (firstordefault != null)
+//{
+//    Console.WriteLine(firstordefault.name);
+//}
+//else
+//    Console.WriteLine("Customer Not Found");
+
+
 
 //Quntifier
 
