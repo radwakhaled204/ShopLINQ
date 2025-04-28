@@ -65,16 +65,16 @@ public static class MyData
                     }
                 }
             },
-                      new Customer
+            new Customer
             {
-                id = 3,
+                id = 4,
                 name = "Azza",
                 orders = new List<Order>
                 {
                     new Order
                     {
-                        id = 103,
-                        date = DateTime.Now.AddDays(-7),
+                        id = 104,
+                        date = DateTime.Now.AddDays(-6),
                         products = new List<Product>
                         {
                             new Product { id = 1, name = "Bed", price = 2500 },
@@ -86,13 +86,13 @@ public static class MyData
             },
             new Customer
             {
-                id = 4,
+                id = 5,
                 name = "Radwa",
                 orders = new List<Order>
                 {
                     new Order
                     {
-                        id = 104,
+                        id = 105,
                         date = DateTime.Now.AddDays(-8),
                         products = new List<Product>
                         {
