@@ -199,13 +199,13 @@ var customer = MyData.GetCustomers();
 
 
 //SkipWhile , TakeWhile
-//var skipWhileNameStartsWithA = MyData.GetCustomers()
-//    .SkipWhile(c => c.name.StartsWith("A"))
-//    .ToList();
+var skipWhileNameStartsWithA = MyData.GetCustomers()
+    .SkipWhile(c => c.name.StartsWith("A"))
+    .ToList();
 
-//var takeWhileNameStartsWithA = MyData.GetCustomers()
-//    .TakeWhile(c => c.name.StartsWith("A"))
-//    .ToList();
+var takeWhileNameStartsWithA = MyData.GetCustomers()
+    .TakeWhile(c => c.name.StartsWith("A"))
+    .ToList();
 
 
 
