@@ -162,16 +162,25 @@ var customer = MyData.GetCustomers();
 //Quntifier
 
 //Any
-//var anyproduct = MyData.GetCustomers()
+//var anyproduct = customer
 //    .Any(c => c.orders.Any(o => o.products.Any(p => p.price > 2000)));
 //Console.WriteLine(anyproduct);
 
 //All
-//var allHaveOneOrder = MyData.GetCustomers()
+//var allHaveOneOrder = customer
 //    .All(c => c.orders.Count == 9);
 //Console.WriteLine(allHaveOneOrder);
 
+//Contain
+//var aliExists = customer
+//    .Select(c => c.name)
+//    .Contains("Ali");
+//Console.WriteLine(aliExists);
 
+//var ayaExists = customer
+//    .Select(c => c.name)
+//    .Contains("Aya");
+//Console.WriteLine(ayaExists);
 //Set Operations
 
 //Conversion
