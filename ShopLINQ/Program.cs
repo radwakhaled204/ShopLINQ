@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Intrinsics.X86;
 using DataStore;
 using DataStore.Models;
 
@@ -69,6 +71,7 @@ var customer = MyData.GetCustomers();
 //    }
 //}
 
+
 //ToLookup
 //var order = customer.SelectMany(o => o.orders).SelectMany(p => p.products).ToLookup(s => s.price).ToList();
 //foreach (var group in order)
@@ -86,7 +89,6 @@ var customer = MyData.GetCustomers();
 //var sumofprice = customer.SelectMany(o => o.orders).SelectMany(p=> p.products).Sum(s => s.price);
 //    Console.WriteLine(sumofprice);
 
-
 //count 
 //var countoforder = customer.SelectMany(o => o.orders).Count();
 //     Console.WriteLine(countoforder);
@@ -99,14 +101,19 @@ var customer = MyData.GetCustomers();
 //var min = customer.SelectMany(o => o.orders).SelectMany(p => p.products).Min(s => s.price);
 //Console.WriteLine(min);
 
-
 //Average
 //var ave = customer.SelectMany(o => o.orders).SelectMany(p => p.products).Average(s => s.price);
 //Console.WriteLine(ave);
 
-//Joining 
 
 //Element Operators
+
+//last
+//var last = customer.Last();
+//Console.WriteLine(last.name);
+
+
+
 
 //Quntifier
 
