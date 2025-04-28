@@ -149,6 +149,14 @@ var customer = MyData.GetCustomers();
 //else
 //    Console.WriteLine("Customer Not Found");
 
+
+
+//ElementAt
+//var findcust = MyData.GetCustomers().ElementAt(4);
+//Console.WriteLine(findcust.name);
+
+
+
 //Quntifier
 
 //Set Operations
