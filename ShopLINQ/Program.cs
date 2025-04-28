@@ -84,17 +84,16 @@ var customer = MyData.GetCustomers();
 //Aggregation
 //sum
 //var sumofprice = customer.SelectMany(o => o.orders).SelectMany(p=> p.products).Sum(s => s.price);
-
 //    Console.WriteLine(sumofprice);
+
+
 //count 
-var countoforder = customer.SelectMany(o => o.orders).Count();
+//var countoforder = customer.SelectMany(o => o.orders).Count();
+//     Console.WriteLine(countoforder);
 
-Console.WriteLine(countoforder);
-
-
-
-
-
+//max
+//var max = customer.SelectMany(o => o.orders).SelectMany(p => p.products).Max(s => s.price);
+//     Console.WriteLine(max);
 
 
 //Joining 
