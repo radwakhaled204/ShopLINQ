@@ -112,6 +112,9 @@ var customer = MyData.GetCustomers();
 //var last = customer.Last();
 //Console.WriteLine(last.name);
 
+//first
+//var first = customer.First();
+//Console.WriteLine(first.name);
 
 
 
