@@ -93,8 +93,10 @@ var customer = MyData.GetCustomers();
 
 //max
 //var max = customer.SelectMany(o => o.orders).SelectMany(p => p.products).Max(s => s.price);
-//     Console.WriteLine(max);
+//Console.WriteLine(max);
 
+var min = customer.SelectMany(o => o.orders).SelectMany(p => p.products).Min(s => s.price);
+Console.WriteLine(min);
 
 //Joining 
 
