@@ -181,10 +181,15 @@ var customer = MyData.GetCustomers();
 //    .Select(c => c.name)
 //    .Contains("Aya");
 //Console.WriteLine(ayaExists);
+
+
 //Set Operations
 
 //Conversion
 
-//Partitioning 
+//var customersList = MyData.GetCustomers().ToList();
+//var customersArray = MyData.GetCustomers().ToArray();
+//var customersDict = MyData.GetCustomers()
+//    .ToDictionary(c => c.id, c => c.name);
 
-//Miscellaneous
+
