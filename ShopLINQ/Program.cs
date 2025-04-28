@@ -160,11 +160,17 @@ var customer = MyData.GetCustomers();
 //Console.WriteLine(findcustordefault.name);
 
 //Quntifier
+
 //Any
 //var anyproduct = MyData.GetCustomers()
 //    .Any(c => c.orders.Any(o => o.products.Any(p => p.price > 2000)));
-
 //Console.WriteLine(anyproduct);
+
+//All
+//var allHaveOneOrder = MyData.GetCustomers()
+//    .All(c => c.orders.Count == 9);
+//Console.WriteLine(allHaveOneOrder);
+
 
 //Set Operations
 
