@@ -193,3 +193,20 @@ var customer = MyData.GetCustomers();
 //    .ToDictionary(c => c.id, c => c.name);
 
 
+//Partitioning 
+//Take , Skip
+//var skipFirstTwo = MyData.GetCustomers().Skip(2).Take(2).ToList();
+
+
+//SkipWhile , TakeWhile
+//var skipWhileNameStartsWithA = MyData.GetCustomers()
+//    .SkipWhile(c => c.name.StartsWith("A"))
+//    .ToList();
+
+//var takeWhileNameStartsWithA = MyData.GetCustomers()
+//    .TakeWhile(c => c.name.StartsWith("A"))
+//    .ToList();
+
+
+
+
