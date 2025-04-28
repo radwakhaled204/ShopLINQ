@@ -136,7 +136,18 @@ var customer = MyData.GetCustomers();
 //else
 //    Console.WriteLine("Customer Not Found");
 
+//single
+//var first = customer.First();
+//Console.WriteLine(first.name);
 
+//singleorefault
+var singleorefault = customer.SingleOrDefault(n => n.name == "Radwa");
+if (singleorefault != null)
+{
+    Console.WriteLine(singleorefault.name);
+}
+else
+    Console.WriteLine("Customer Not Found");
 
 //Quntifier
 
