@@ -95,8 +95,14 @@ var customer = MyData.GetCustomers();
 //var max = customer.SelectMany(o => o.orders).SelectMany(p => p.products).Max(s => s.price);
 //Console.WriteLine(max);
 
-var min = customer.SelectMany(o => o.orders).SelectMany(p => p.products).Min(s => s.price);
-Console.WriteLine(min);
+//min
+//var min = customer.SelectMany(o => o.orders).SelectMany(p => p.products).Min(s => s.price);
+//Console.WriteLine(min);
+
+
+//Average
+var ave = customer.SelectMany(o => o.orders).SelectMany(p => p.products).Average(s => s.price);
+Console.WriteLine(ave);
 
 //Joining 
 
