@@ -101,8 +101,8 @@ var customer = MyData.GetCustomers();
 
 
 //Average
-var ave = customer.SelectMany(o => o.orders).SelectMany(p => p.products).Average(s => s.price);
-Console.WriteLine(ave);
+//var ave = customer.SelectMany(o => o.orders).SelectMany(p => p.products).Average(s => s.price);
+//Console.WriteLine(ave);
 
 //Joining 
 
