@@ -156,10 +156,15 @@ var customer = MyData.GetCustomers();
 //Console.WriteLine(findcust.name);
 
 //ElementAtOrDefault
-//var findcust = customer.ElementAtOrDefault(2);
-//Console.WriteLine(findcust.name);
+//var findcustordefault = customer.ElementAtOrDefault(2);
+//Console.WriteLine(findcustordefault.name);
 
 //Quntifier
+//Any
+//var anyproduct = MyData.GetCustomers()
+//    .Any(c => c.orders.Any(o => o.products.Any(p => p.price > 2000)));
+
+//Console.WriteLine(anyproduct);
 
 //Set Operations
 
